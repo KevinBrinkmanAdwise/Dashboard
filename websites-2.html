@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Import Source Sans -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+
+  <!-- Ionic Icons -->
+  <link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- import DataTables stylesheet -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
+  <!-- import custom stylesheet -->
+  <link rel="stylesheet" href="styles/css/styles.css">
+
+  <title>Dashboard | Adwise</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2 px-1" id="sticky-sidebar">
+        <div class="sticky-top">
+          <nav class="logo">
+            <span class="navbar-brand mb-0 h1">Dashboard Name</span>
+          </nav>
+
+          <div class="nav flex-column">
+            <ul>
+              <li>
+                <img src="img/menu_home.svg" style="width:50px;" alt="">
+                <a href="home.html" class="nav-link">Home</a>
+              </li>
+              <li>
+                <img src="img/menu_support.svg" style="width:50px;" alt="">
+                <a href="tickets.html" class="nav-link">Tickets</a>
+              </li>
+              <li class="active">
+                <img src="img/menu_websites.svg" style="width:50px;" alt="">
+                <a href="websites.html" class="nav-link">Websites</a>
+              </li>
+              <li>
+                <img src="img/menu_klanten.svg" style="width:50px;" alt="">
+                <a href="klanten.html" class="nav-link">Klanten</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-10" id="main">
+        <div class="col-12"><h3>Website overzicht</h3></div>
+        <div class="row">
+
+          <div class="col-12 col-md-8">
+            <div class="row">
+            <div class="col-12">
+
+              <!-- <div class="search float-right">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control search-form-round" placeholder="Begin met zoeken" aria-label="Klantnaam" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-blue btn-round" type="button">Zoeken</button>
+                  </div>
+                </div>
+              </div> -->
+
+            </div>
+            </div>
+            <div class="card-dashboard">
+              <h3>Websites</h3>
+              <table class="table" id="website-overzicht">
+                <thead>
+                  <tr>
+                    <th scope="col-4">Website</th>
+                    <th scope="col-2">MODX</th>
+                    <th scope="col-2">PHP</th>
+                    <th scope="col-2">PACKAGE UPDATES</th>
+                    <th scope="col-2">ALERTS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                  <td>Customerdomain.nl</td>
+                  <td>2.6.5-pl</td>
+                  <td>5.0.31</td>
+                  <td>3</td>
+                  <td>3</td>
+                  </tr>
+                  <tr>
+                  <td>Customerdomain.nl</td>
+                  <td>1.6.5-pl</td>
+                  <td>7.0.31</td>
+                  <td>1</td>
+                  <td>2</td>
+                  </tr>
+                  <tr>
+                  <td>Adwise.nl</td>
+                  <td>2.6.5-pl</td>
+                  <td>7.0.31</td>
+                  <td>3</td>
+                  <td>3</td>
+                  </tr>
+                  <tr>
+                  <td>Junior.nl</td>
+                  <td>2.0.5-pl</td>
+                  <td>7.0.31</td>
+                  <td>3</td>
+                  <td>2</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card-dashboard">
+              <h3>Updates nodig</h3>
+
+              <table class="table" class="display" id="update-website">
+                <thead>
+                  <tr>
+                    <th scope="col">Website</th>
+                    <th scope="col">MODX</th>
+                    <th scope="col">Updates</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                  <td>Adwise</td>
+                  <td>2.6.5-pl</td>
+                  <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>Bedrijfsnaam van Bedrijf Y</td>
+                    <td>2.6.5-pl</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>Bedrijfsnaam van Bedrijf A</td>
+                    <td>1.6.3-pl</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>Bedrijfsnaam van Bedrijf B</td>
+                    <td>2.6.5-pl</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>Bedrijfsnaam van Bedrijf C</td>
+                    <td>1.6.5-pl</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                  <td>Bedrijfsnaam van Bedrijf X</td>
+                  <td>2.6.5-pl</td>
+                  <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>Bedrijfsnaam van Bedrijf X</td>
+                    <td>2.6.5-pl</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>Bedrijfsnaam van Bedrijf X</td>
+                    <td>2.6.5-pl</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>Bedrijfsnaam van Bedrijf A</td>
+                    <td>1.6.3-pl</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>Bedrijfsnaam van Bedrijf B</td>
+                    <td>2.6.5-pl</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>Bedrijfsnaam van Bedrijf C</td>
+                    <td>1.6.5-pl</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                  <td>Bedrijfsnaam van Bedrijf X</td>
+                  <td>2.6.5-pl</td>
+                  <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>Bedrijfsnaam van Bedrijf X</td>
+                    <td>1.6.5-pl</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>Bedrijfsnaam van Bedrijf X</td>
+                    <td>2.6.5-pl</td>
+                    <td>3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div> <!-- end content row -->
+      </div><!-- end main content -->
+
+    </div> <!-- end row -->
+
+  </div> <!-- end container -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" ></script>
+
+<script>
+$('#update-website').DataTable( {
+    ordering: true,
+    paging: true,
+    searching: true,
+    "language": {
+    "search": ""
+  }
+} );
+
+  $('#website-overzicht').DataTable( {
+      ordering: true,
+      paging: true,
+      searching: true,
+      "language": {
+      "search": ""
+    }
+  } );
+$('.dataTables_filter input').attr("placeholder", "Zoeken...");
+
+</script>
+</body>
+
+</html>
